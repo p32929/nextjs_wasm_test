@@ -4,11 +4,11 @@ A working proof of concept for calling Rust-compiled WebAssembly from a Next.js 
 
 ## What's included
 
-- **Rust → wasm** — `src/lib.rs` exports a `#[no_mangle] extern "C"` function, compiled to `adder.wasm` as a `cdylib`
-- **The webpack config that makes it work** — `next.config.js` enables `asyncWebAssembly` and fixes the prerender path, which is the part that's actually fiddly
-- **A component that calls it** — `components/others/WaasmComponent.tsx` imports the module and calls `add_twos` from the UI
-- **Typed wasm exports** — `wasm.d.ts` declares the module's shape so TypeScript is happy
-- **Next.js + TypeScript + Material-UI + usm-redux** as the surrounding app
+1. **Rust → wasm** — `src/lib.rs` exports a `#[no_mangle] extern "C"` function, compiled to `adder.wasm` as a `cdylib`
+2. **The webpack config that makes it work** — `next.config.js` enables `asyncWebAssembly` and fixes the prerender path, which is the part that's actually fiddly
+3. **A component that calls it** — `components/others/WaasmComponent.tsx` imports the module and calls `add_twos` from the UI
+4. **Typed wasm exports** — `wasm.d.ts` declares the module's shape so TypeScript is happy
+5. **Next.js + TypeScript + Material-UI + usm-redux** as the surrounding app
 
 ## Project layout
 
@@ -45,26 +45,12 @@ Webpack 5 doesn't enable WebAssembly by default, and the default output path bre
 
 ## Contributing
 
-Contributions are warmly welcomed and greatly appreciated! Whether it's a bug fix, new feature, or improvement, your input helps make this project better for everyone.
-
-Before submitting a pull request, please:
-
-1. Create an issue describing the feature or bug fix you'd like to work on
-2. Wait for discussion and approval to ensure alignment with project goals
-3. Fork the repository and create your feature branch
-4. Submit your pull request with a clear description of changes
-
-This approach helps avoid duplicate efforts and ensures smooth collaboration. Thank you for considering contributing!
+Contributions are very welcome, thank you! Before you start on a pull request, please open an issue and tell me what you would like to add or change. That way we can agree on it first, and your time is not wasted on something that might not fit. Thanks for helping make nextjs_wasm_test better.
 
 ## Share
 
-Sharing this repository with your friends is just one click away from here
+<a href="https://p32929.github.io/share/?repo=nextjs_wasm_test"><img src="https://p32929.github.io/readme/share.svg" alt="Share this with your friends in just a click" width="420"></a>
 
-[![facebook](https://user-images.githubusercontent.com/6418354/179013321-ac1d1452-0689-493f-9066-940cf2302b6e.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/p32929/nextjs_wasm_test/)
-[![twitter](https://user-images.githubusercontent.com/6418354/179013351-7d8d6d1c-4ce2-46ab-bef8-4c4765a1b888.png)](https://twitter.com/intent/tweet?url=https://github.com/p32929/nextjs_wasm_test/)
-[![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/nextjs_wasm_test/)
-[![pocket](https://user-images.githubusercontent.com/6418354/179013334-b095c45f-becf-49f4-9ee1-5a731a9b1f85.png)](https://getpocket.com/save?url=https://github.com/p32929/nextjs_wasm_test/)
-[![pinterest](https://user-images.githubusercontent.com/6418354/179013331-44cd9206-11b1-4b65-becb-5863b61c828f.png)](https://pinterest.com/pin/create/button/?url=https://github.com/p32929/nextjs_wasm_test/)
-[![reddit](https://user-images.githubusercontent.com/6418354/179013338-7416ae3f-73ba-4522-86e1-1374d7082d22.png)](https://www.reddit.com/submit?url=https://github.com/p32929/nextjs_wasm_test/)
-[![linkedin](https://user-images.githubusercontent.com/6418354/179013327-ca7b7102-1da8-4b1c-858f-1a6e5f21bd70.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/p32929/nextjs_wasm_test/)
-[![whatsapp](https://user-images.githubusercontent.com/6418354/179013353-f477fa0b-3e6f-4138-a357-c9991b23ff88.png)](https://api.whatsapp.com/send?text=https://github.com/p32929/nextjs_wasm_test/)
+## Support
+
+<a href="https://p32929.github.io/support/"><img src="https://p32929.github.io/readme/support.svg" alt="If you like my works and want to support me, feel free to support" width="420"></a>
